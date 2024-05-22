@@ -45,30 +45,30 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
 
 
+        <h1 class="my-4 text-center"> Weather for Delhi</h1>
         <main>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Free</h4>
+                            <h4 class="my-0 fw-normal">Temperature</h4>
                         </div>
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$0<small
                                     class="text-body-secondary fw-light">/mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>10 users included</li>
-                                <li>2 GB of storage</li>
-                                <li>Email support</li>
-                                <li>Help center access</li>
-                            </ul>
+                                <li>Temperature is <span id="temp"></span></li>
+                                <li>Min temp is <span id="min_temp"></span></li>
+                                <li>Max Temp is <span id="max_temp"></span></li> 
+                            </ul> 
                             <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
                         </div>
                     </div>
@@ -82,10 +82,10 @@
                             <h1 class="card-title pricing-card-title">$15<small
                                     class="text-body-secondary fw-light">/mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>20 users included</li>
-                                <li>10 GB of storage</li>
-                                <li>Priority email support</li>
-                                <li>Help center access</li>
+                                <li>Cloud PCT is <span id="cloud_pct"></span></li>
+                                <li>Feels Like <span id="feels_like"></span></li>
+                                <li>Humidity is <span id="humidity"></span></li>                            </ul>
+                            
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
                         </div>
@@ -100,10 +100,10 @@
                             <h1 class="card-title pricing-card-title">$29<small
                                     class="text-body-secondary fw-light">/mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>30 users included</li>
-                                <li>15 GB of storage</li>
-                                <li>Phone and email support</li>
-                                <li>Help center access</li>
+                                <li>Wind Degrees is <span id="wind_degrees"></span></li>
+                                <li>Wind Speed is <span id="wind_speed"></span></li>
+                                <li>Sunrise Time <span id="sunrise"></span></li>
+                                <li>Sunset Time <span id="sunset"></span></li>
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
                         </div>
@@ -133,70 +133,86 @@
                     <tbody>
                         <tr>
                             <th scope="row" class="text-start">Japan</th>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
                             <td>2</td>
                             <td>2</td>
                             <td>2</td>
                             <td>2</td>
                             <td>2</td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+            
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">London</th>
-                            <td></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            
                         </tr>
                     </tbody>
 
                     <tbody>
                         <tr>
                             <th scope="row" class="text-start">Australia</th>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Antartica</th>
-                            <td></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Switzerland</th>
-                            <td></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Canada</th>
-                            <td></td>
-                            <td></td>
-                            <td><svg class="bi" width="24" height="24">
-                                    <use xlink:href="#check"></use>
-                                </svg></td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
                         </tr>
                     </tbody>
                 </table>
